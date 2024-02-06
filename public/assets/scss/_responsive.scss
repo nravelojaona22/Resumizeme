@@ -1,0 +1,71 @@
+@use "variables" as *;
+
+@media (max-width: 1180px) {
+    .main-row {
+        padding: 20px 25px;
+    }
+}
+
+@media (max-width: 1000px){
+    .sidebar-mobile-container{
+        display: block;
+        background-color: #fff;
+        width: 100%;
+        z-index: 10;
+
+        & #mobile-sidebar {
+            max-height: 100vh;
+            & .sidebar-block {
+                width: calc(100% - 20px);
+            }
+
+            & .menu-access {
+                font-size: 35px;
+            }
+
+            & .sidebar-content.hide {
+                display: none!important;
+            }
+
+            & .sidebat-footer.hide {
+                display: none!important;
+            }
+        }
+    
+    }
+
+    #sidebar{
+        display: none;
+    }
+
+    .wrapper{
+        padding-top: 52px;
+
+        & .main-row{
+            border: none;
+        }
+    }
+
+    
+}
+
+@media (min-width: 1001px){
+    .sidebar-mobile-container{
+        display: none;
+    }
+    #sidebar{
+        display: block;
+    }
+}
+
+@media (min-width: 992px){
+    .resumedone-info {
+        margin-bottom: 1rem !important;
+    }
+}
+
+@media (min-width: 768px){
+    .resumedone-info {
+        margin-bottom: 0.5rem !important;
+    }
+}

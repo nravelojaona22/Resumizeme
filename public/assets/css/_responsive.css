@@ -1,0 +1,88 @@
+@media screen and (max-width: 1024px) {
+    .wrapper{
+        width: 100vw;
+        min-height: 100vh;
+        display: flex;
+        overflow-x: hidden;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .wrapper .container {
+        padding-top: 115px;
+    }
+
+    .personal-info-content{
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+    
+    .personal-info-content form {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .container {
+        flex: auto;
+        padding: 20px 20px 0px 20px;
+    }
+
+    .input-container{
+        width: 100%;
+    }
+
+    .sidebar-content {
+        padding-left: 32px;
+    }
+
+    .sidebar-content.hide, .sidebar-footer.hide{
+        display: none;
+    }
+    .sidebar.hide{
+        position: absolute;
+    }
+
+    .sidebar{
+        z-index: 10;
+        flex: auto;
+        width: 100%;
+        background-color: #fff;
+        font-size: 1.6rem;
+    }
+
+    .sidebar .sidebar-header{
+        display: flex;
+        align-items: center;
+        width: calc(100% - 40px);
+        font-size: 2rem;
+        padding: 20px;
+    }
+
+    .sidebar .sidebar-header img{
+        width: 75px;
+        height: 75px;
+    }
+
+    .personal-info-content img{
+        width: 60%!important;
+    }
+    .personal-info-content .btn-container{
+        width: 100%;
+    }
+
+    .resp-menu{
+        display: block;
+    }
+
+    .history-list, .star-list, .board-list{
+        gap: 15px;
+    }
+
+    .sidebar .with-icon::before {
+        top: 4px;
+        left: -1px;
+    }
+
+}

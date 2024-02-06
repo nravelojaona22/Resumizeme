@@ -1,0 +1,35 @@
+@use "variables" as *;
+
+.slideLeft-enter {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  
+.slideLeft-enter-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 300ms, transform 300ms;
+}
+
+.slideLeft-exit {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.slideLeft-exit-active {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 300ms, transform 300ms;
+}
+
+.slideLeftContent {
+    padding: 20px;
+    background-color: #e0e0e0;
+    border: 1px solid #ccc;
+}
+
+.accordion-container{
+    padding-left: 2px;
+    padding-right: 2px;
+    overflow: hidden;
+}
