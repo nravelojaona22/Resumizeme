@@ -10,6 +10,9 @@
     "deploy": "gh-pages -d out",
     "predeploy": "next build"
   },
+  "gh-pages": {
+    "src": "out"
+  },
   "dependencies": {
     "bootstrap": "^5.3.2",
     "next": "14.1.0",
