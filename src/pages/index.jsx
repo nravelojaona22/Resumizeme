@@ -66,11 +66,11 @@ const home = ({children, pageTitle}) => {
                 </div>
                 <div className="delete-account-container default-radius flex-display flex-direction-column">
                     <span ><b>Delete Account</b></span>
-                    <p>If you delete your account you'll be permanently removing it from our system - you can't undo it.</p>
+                    <p>{"If you delete your account you'll be permanently removing it from our system - you can't undo it."}</p>
                     <Link href={'#'} className='btn-delete-link'>Yes, Delete my account</Link>
                 </div>
                 <div className='get-support-txt'>
-                    <p><Link href={'#'} className='blue-text'>Get in touch with our support team</Link> if you have any question or want to leave some feedback.<br/>We'll be happy to hear from you.</p>
+                    <p><Link href={'#'} className='blue-text'>Get in touch with our support team</Link> if you have any question or want to leave some feedback.<br/>We&quot;ll be happy to hear from you.</p>
                 </div>
             </Layout>
         </>
